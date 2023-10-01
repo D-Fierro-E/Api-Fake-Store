@@ -1,0 +1,42 @@
+.filter__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.filter__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.filter__menu {
+    margin-bottom: 20px;
+}
+
+.filter__btn {
+    background: 0;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 5px 10px;
+    width: 160px;
+    border: 2px solid #080808;
+    margin-right: 5px;
+    transition: all .1s;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background-color: #ff0101;
+        color: #fff;
+    }
+
+    &--active {
+        background-color: #f90404;
+        color: #fff;
+    }
+}

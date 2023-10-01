@@ -1,0 +1,16 @@
+<div class="filter">
+    <div class="container">
+        <div class="filter__inner">
+            <div class="filter__title">
+                Categorias:
+            </div>
+            <div class="filter__menu">
+                <button (click)="onFilterClick('all')" class="filter__btn" [ngClass]="{'filter__btn--active': whatActive === 'all'}">Todo</button>
+                <button (click)="onFilterClick('men')" class="filter__btn" [ngClass]="{'filter__btn--active': whatActive === 'men'}">Ropa de hombre</button>
+                <button (click)="onFilterClick('women')" class="filter__btn" [ngClass]="{'filter__btn--active': whatActive === 'women'}">Ropa de mujer</button>
+                <button (click)="onFilterClick('jewel')" class="filter__btn" [ngClass]="{'filter__btn--active': whatActive === 'jewel'}">Joyas</button>
+                <button (click)="onFilterClick('electro')" class="filter__btn" [ngClass]="{'filter__btn--active': whatActive === 'electro'}">Electronica</button>
+            </div>
+        </div>
+    </div>
+</div>
